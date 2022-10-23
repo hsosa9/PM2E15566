@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E15566.MainPage"
+             BackgroundImage="fon.jpg"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Label Text="Hecho Por Hector y Karla" HorizontalOptions="Center" FontSize="26" TextColor="White" Padding="0,0,0,0"></Label>
+        <Label Text="5566" HorizontalOptions="Center" FontSize="26" TextColor="WHITE" Padding="0,0,0,0"></Label>
+
+
+        <Image Source="https://www.uth.hn/wp-content/uploads/2020/01/204-300x184.png"
+               HeightRequest="90" />
+
+        <Grid>
+            <Image IsVisible="false"  HeightRequest="300" x:Name="imagefile" Grid.Row="0" ></Image>
+        </Grid>
+
+        <Label Text="Latitud" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text="" IsReadOnly="True" Keyboard="Text" x:Name="txtlatitud" TextColor="Yellow"  />
+
+        <Label Text="Longitud" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  IsReadOnly="True"  Keyboard="Text"  TextColor="Yellow" x:Name="txtlongitud" />
+
+        <Label Text="Describa la Ubicacion" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text" TextColor="Yellow" x:Name="txtdescripcion"/>
+
+        <Button Text="Captura del lugar" x:Name="buttoncamera" FontSize="15" FontAttributes="Bold" 
+          WidthRequest="220" Clicked="buttoncamera_Clicked"
+         HeightRequest="50"  VerticalOptions="Center" 
+         HorizontalOptions ="Center" BackgroundColor   ="DimGray"/>
+
+        <Button Text="Guardar Ubicacion" x:Name="btnguardar" FontSize="15" FontAttributes="Bold" 
+          WidthRequest="220" Clicked="btnguardar_Clicked"
+         HeightRequest="50"  VerticalOptions="Center" 
+         HorizontalOptions ="Center" BackgroundColor   ="DimGray"/>
+
+        <Button Text="Listar Ubicaciones" x:Name="ubicaciones" FontSize="15" FontAttributes="Bold" 
+         WidthRequest="220"
+         HeightRequest="50" VerticalOptions="Center" 
+         HorizontalOptions ="Center" BackgroundColor   ="DimGray" Clicked="btn02_Clicked"/>
+
+        
+
+
+    </StackLayout>
+
+
+</ContentPage>
